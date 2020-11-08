@@ -1,0 +1,94 @@
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #5d5d5d;
+    margin: 0px;
+}
+
+.container {
+    margin: 10px;
+}
+
+#sec1 .container {
+    text-align: center;
+}
+
+button {
+    border-radius: 3px;
+    color: white;
+    background-color: blue;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+li {
+    display: inline-block;
+}
+
+li.btn-siguiente {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.d-none {
+    display: none;
+}
+.d-block{
+    display: block;
+}
+
+.form-nom,
+.form-fecha,
+.form-dire,
+.form-cod,
+.form-prov,
+.form-munic {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.form-nom,
+.form-fecha,
+.form-cod,
+.form-prov,
+.form-munic {
+}
+
+#municipio {
+    text-transform: uppercase;
+}
+
+.errorInput {
+    background-color: lightgrey;
+    color: #ff7676;
+    border: 1px solid red;
+}
+
+.errorMessage {
+    color: #ff7676;
+}
+
+.validateInput {
+    background-color: rgb(232, 240, 254);
+    color: black;
+    border: 1px solid green;
+}

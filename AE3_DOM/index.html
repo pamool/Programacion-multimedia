@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<head>
+    <title>DOM 3</title>
+    <script type='text/javascript' src='main.js'></script>
+    <link rel="stylesheet" type="text/css" href="visual.css" />
+</head>
+
+<body>
+    <section id="sec1">
+        <div class="container">
+            <h2>Formulario de intruducctón de datos</h2>
+            <p>A contunuación el usuario encontrará un formulario en el que deberá introducir varios datos: Nombre y apellidos,
+                Fecha de nacimiento, Dirección, Código postal, Provincia y Municipio:</p>
+            <form action="">
+                <input type="url" id="callbackUrl" name="url" placeholder="Introduce una URL">
+            </form>
+        </div>
+    </section>
+    <section id="sec2" class="d-none">
+        <div class="errors-container">
+        </div>
+        <div class="container">
+            <form id="form">
+                <div class="form-nom">
+                    <label class="texto">Nombre y apellidos: </label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <p id="errorNombre" class="d-none errorMessage">Error al introducir nombre y apellidos</p>
+                </div>
+                <div class="form-fecha">
+                    <label for="fecha">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                    <p for="errorFecha" class="d-none errorMessage">Error al introducir la fecha de nacimiento</p>
+                </div>
+                <div class="form-dire">
+                    <label for="direccion">Direccion:</label>
+                    <input type="text" id="direccion" name="direccion">
+                </div>
+                <div class="form-cod">
+                    <label for="cod_postal">Codigo postal:</label>
+                    <input type="number" id="cod_postal" name="cod_postal" maxlength="5" required="">
+                    <label for="errorCodigo" class="d-none errorMessage">Error al introducir el código postal</label>
+                </div>
+                <div class="form-prov">
+                    <label for="sel_provincia">Seleccionar provincia:</label>
+                    <select name="sel_provincia" id="provincia" required>
+                        <option>Valencia</option>                         
+                        <option>Alicante</option>                            
+                        <option>Castellon</option>                           
+                    </select>
+                </div>
+                <div class="form-munic">
+                    <label for="municipio">Municipio:</label>
+                    <input type="text" id="municipio" name="municipio" required>
+                    <p for="errorMunicioio" class="d-none errorMessage">Error al introducir el municipio</p>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="sec3" class="d-none">
+        <div class="container">
+            <div>
+                <p>Nombre: </p>
+                <p id="nombreCorrecto"></p>
+            </div>
+            <div>
+                <p>Fecha de nacimiento: </p>
+                <p id="fechaCorrecta"></p>
+            </div>
+            <div>
+                <p>Direccion: </p>
+                <p id="direccionCorrecta"></p>
+            </div>
+            <div>
+                <p>Codigo Postal: </p>
+                <p id="cod_postalCorrecto"></p>
+            </div>
+            <div>
+                <p>Provincia: </p>
+                <p id="provinciaCorrecta"></p>
+            </div>
+            <div>
+                <p>Municipio: </p>
+                <p id="municipioCorrecto"></p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="sec4" class="d-none">
+        <div class="container">
+            <label>Datos correctamente enviados. Gracias por su colaboracion.</label>
+            <a class="btn" id="terminar" href=""><button type="button">Terminar</button></a>​
+        </div>
+    </section>
+
+    <nav id="nav">
+        <ul>
+            <li class="btn-atras"><button id="atras">Atras</button></li>
+            <li class="btn-siguiente"><button id="continuar">Continuar</button></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
